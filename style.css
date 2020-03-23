@@ -1,3 +1,10 @@
+body{
+  display: flex;
+  
+}
+section{
+  display: flex;
+}
 .square {
   background-color: green;
   font-size: 4em;
@@ -6,3 +13,32 @@
   height: 80px;
   border: 2px solid orange;
 }
+@media screen and (max-width : 1000px)  {
+  body{
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  body{
+    flex-direction: row;
+  }
+  section{
+    flex-direction: column;
+  }
+
+}
+
+
+
+@media (max-width: 600px) {
+  body{
+    flex-direction: column;
+  }
+  section{
+    flex-direction: column;
+  }
+
+}
+
